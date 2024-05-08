@@ -40,3 +40,32 @@ footer {
     text-align: center;
     padding: 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.intro-section {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+.intro-section h1 {
+    margin-top: 0;
+}
+.visuals-section {
+    text-align: center;
+    padding: 50px;
+}
+.visuals-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

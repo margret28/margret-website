@@ -18,34 +18,117 @@
         </nav>
     </header>
     
+<!-- Introduction Section -->
+<section class="intro-section">
+    <div>
+        <h2>Introduction</h2>
+        <p>I'm magret, a web designer. On this website, you'll find examples of my work and projects. Explore and get in touch!</p>
+    </div>
+</section>
+
+<!-- Visuals Section -->
+<section class="visuals-section">
+    <h2>Visuals</h2>
+    <img id="mainImage" src="image/maaaaa.jpg" alt="image">
+</section>
     <section id="about">
         <h2>About Me</h2>
-        <p>A'm Margret Reta from kijiji connect.I love creating website also interacting with new people</p>
+        <p>A'm Margret Reta from kijiji connect.I am a website designer I want to secure a good position in accordance to my professional in order to develop and
+            promote creativity and high-order thinking skills that increases the ability and
+            knowledge of all the projects that I have achieved  </p>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-            <h3>project 2</h3>
-            <p>description of project 2</p>
+            <p>web project</p>
+            <h4>project 2</h4>
+            <p>mobile app</p>
+
         </div>
         <!-- Add more project sections as needed -->
     </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            .intro-section {
+                background-color: #f0f0f0;
+                padding: 50px;
+                text-align: center;
+            }
+            .intro-section h2 {
+                margin-top: 0;
+            }
+            .visuals-section {
+                text-align: center;
+                padding: 50px;
+            }
+            .visuals-section img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+            .work-samples-section, .case-studies-section {
+                padding: 50px;
+            }
+            .project {
+                margin-bottom: 30px;
+            }
+            .filter-options {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+   
+
+<!-- Work Samples Section -->
+<section class="work-samples-section">
+    <h2>Work Samples</h2>
+    <div class="filter-options">
+        <button onclick="filterWork('all')">All</button>
+        <button onclick="filterWork('web')">Web</button>
+        <button onclick="filterWork('mobile')">Mobile</button>
+    </div>
+    <div id="workSamples">
+        <!-- Your work samples will be dynamically added here -->
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="contact-section section">
+    <h2>Contact Information</h2>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:margretchikaya@gmail.com">margretchikaya@gmail.com</a></p>
+        <p>Phone: 0746259973</p>
+    </div>
+    <div class="contact-form">
+        <h3>Contact Form</h3>
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
             <button type="submit">Send</button>
         </form>
-    </section>
+    </div>
+</section>
+
+
     
     <footer>
         <p>&copy; 2024 My Portfolio</p>
