@@ -23,10 +23,10 @@
 
 // Dummy data for work samples
 const workSamplesData = [
-    { title: 'Web Project 1', category: 'web', description: 'Description of web project 1', image: 'web-project1.jpg' },
-    { title: 'Mobile App Project 1', category: 'mobile', description: 'Description of mobile app project 1', image: 'mobile-project1.jpg' },
+    { title: 'Web Project 1', category: 'web', description: 'A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server.' }
+    ,{ title: 'Mobile App Project 1', category: 'mobile', description: 'A mobile app (or mobile application) is a software application developed specifically for use on small, wireless computing devices, such as smartphones and tablets, rather than desktop or laptop computers.' },
     // Add more samples as needed
-];
+]; 
 
 // Dummy data for case studies
 const caseStudiesData = [
@@ -35,18 +35,7 @@ const caseStudiesData = [
     // Add more case studies as needed
 ];
 
-// Populate work samples section
-const workSamplesSection = document.getElementById('workSamples');
-workSamplesData.forEach(sample => {
-    const projectDiv = document.createElement('div');
-    projectDiv.classList.add('project', sample.category);
-    projectDiv.innerHTML = `
-        <h3>${sample.title}</h3>
-        <img src="${sample.image}" alt="${sample.title}">
-        <p>${sample.description}</p>
-    `;
-    workSamplesSection.appendChild(projectDiv);
-});
+
 
 // Populate case studies section
 const caseStudiesSection = document.getElementById('caseStudies');
